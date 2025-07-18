@@ -1,0 +1,73 @@
+{
+    "model_name": "LGBM_XGBoost_Comparison",
+    "model_params": {
+        "lgbm": {
+            "n_estimators": 100,
+            "random_state": 42
+        },
+        "xgboost": {
+            "n_estimators": 100,
+            "random_state": 42
+        }
+    },
+    "fea_encoding": "label_encoding",
+    "folds": 1,
+    "0_fold_train_data": [
+        1531,
+        3
+    ],
+    "0_fold_test_data": [
+        383,
+        3
+    ],
+    "0_fold_train_performance": {
+        "lgbm": {
+            "rmse": "31.24",
+            "mae": "20.85",
+            "r2": "0.71"
+        },
+        "xgboost": {
+            "rmse": "32.01",
+            "mae": "21.45",
+            "r2": "0.69"
+        }
+    },
+    "0_fold_test_performance": {
+        "lgbm": {
+            "rmse": "77.32",
+            "mae": "42.67",
+            "r2": "0.11"
+        },
+        "xgboost": {
+            "rmse": "75.89",
+            "mae": "41.52",
+            "r2": "0.14"
+        }
+    },
+    "summary": {
+        "train": {
+            "lgbm": {
+                "rmse": "31.24",
+                "mae": "20.85",
+                "r2": "0.71"
+            },
+            "xgboost": {
+                "rmse": "32.01",
+                "mae": "21.45",
+                "r2": "0.69"
+            }
+        },
+        "test": {
+            "lgbm": {
+                "rmse": "77.32",
+                "mae": "42.67",
+                "r2": "0.11"
+            },
+            "xgboost": {
+                "rmse": "75.89",
+                "mae": "41.52",
+                "r2": "0.14"
+            }
+        }
+    }
+}

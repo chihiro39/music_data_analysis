@@ -1,0 +1,147 @@
+{
+    "week2": {
+        "model_name": "RandomForest",
+        "model_params": {
+            "n_estimators": 100,
+            "random_state": 42
+        },
+        "fea_encoding": "onehot",
+        "0_fold_train_data": [
+            478,
+            59
+        ],
+        "0_fold_test_data": [
+            240,
+            59
+        ],
+        "0_fold_train_performance": {
+            "rmse": "10.23",
+            "mae": "7.84",
+            "r2": "0.91"
+        },
+        "0_fold_test_performance": {
+            "rmse": "35.72",
+            "mae": "21.43",
+            "r2": "0.47"
+        },
+        "1_fold_train_data": [
+            479,
+            59
+        ],
+        "1_fold_test_data": [
+            239,
+            59
+        ],
+        "1_fold_train_performance": {
+            "rmse": "10.05",
+            "mae": "7.73",
+            "r2": "0.92"
+        },
+        "1_fold_test_performance": {
+            "rmse": "32.61",
+            "mae": "20.11",
+            "r2": "0.51"
+        },
+        "2_fold_train_data": [
+            479,
+            59
+        ],
+        "2_fold_test_data": [
+            239,
+            59
+        ],
+        "2_fold_train_performance": {
+            "rmse": "10.18",
+            "mae": "7.79",
+            "r2": "0.91"
+        },
+        "2_fold_test_performance": {
+            "rmse": "33.90",
+            "mae": "20.89",
+            "r2": "0.49"
+        },
+        "average_train_performance": {
+            "rmse": "10.15",
+            "mae": "7.79",
+            "r2": "0.91"
+        },
+        "average_test_performance": {
+            "rmse": "34.08",
+            "mae": "20.81",
+            "r2": "0.49"
+        }
+    },
+    "week3": {
+        "model_name": "LGBM_XGBoost_Comparison",
+        "model_params": {
+            "lgbm": {
+                "n_estimators": 100,
+                "random_state": 42
+            },
+            "xgboost": {
+                "n_estimators": 100,
+                "random_state": 42
+            }
+        },
+        "fea_encoding": "label_encoding",
+        "folds": 1,
+        "0_fold_train_data": [
+            1531,
+            3
+        ],
+        "0_fold_test_data": [
+            383,
+            3
+        ],
+        "0_fold_train_performance": {
+            "lgbm": {
+                "rmse": "31.24",
+                "mae": "20.85",
+                "r2": "0.71"
+            },
+            "xgboost": {
+                "rmse": "32.01",
+                "mae": "21.45",
+                "r2": "0.69"
+            }
+        },
+        "0_fold_test_performance": {
+            "lgbm": {
+                "rmse": "77.32",
+                "mae": "42.67",
+                "r2": "0.11"
+            },
+            "xgboost": {
+                "rmse": "75.89",
+                "mae": "41.52",
+                "r2": "0.14"
+            }
+        },
+        "summary": {
+            "train": {
+                "lgbm": {
+                    "rmse": "31.24",
+                    "mae": "20.85",
+                    "r2": "0.71"
+                },
+                "xgboost": {
+                    "rmse": "32.01",
+                    "mae": "21.45",
+                    "r2": "0.69"
+                }
+            },
+            "test": {
+                "lgbm": {
+                    "rmse": "77.32",
+                    "mae": "42.67",
+                    "r2": "0.11"
+                },
+                "xgboost": {
+                    "rmse": "75.89",
+                    "mae": "41.52",
+                    "r2": "0.14"
+                }
+            }
+        }
+    }
+}
